@@ -2,7 +2,7 @@
 //  SwiftUICoreDataSpendingTrackerMinateApp.swift
 //  SwiftUICoreDataSpendingTrackerMinate
 //
-//  Created by Tina T on 1/31/23.
+//  Created by Tina Tung on 1/31/23.
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ struct SwiftUICoreDataSpendingTrackerMinateApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainPadDeviceView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

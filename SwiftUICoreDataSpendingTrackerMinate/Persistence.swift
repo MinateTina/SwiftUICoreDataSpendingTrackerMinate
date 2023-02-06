@@ -2,10 +2,11 @@
 //  Persistence.swift
 //  SwiftUICoreDataSpendingTrackerMinate
 //
-//  Created by Tina T on 1/31/23.
+//  Created by Tina Tung on 1/31/23.
 //
 
 import CoreData
+import UIKit
 
 struct PersistenceController {
     static let shared = PersistenceController()
@@ -52,5 +53,25 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+        seedInitialData()
     }
+    
+    private func seedInitialData() {
+        if UserDefaults.standard.bool(forKey: Self.hasSeededDataKey) { return }
+         
+        let context = container.viewContext
+        let category = TransactionCategory(context: context)
+        category.name = "Office Supplies"
+        category.colorData = UIColor.blue.encode()
+        category.timestamp = Date()      
+        
+        do {
+            try context.save()
+            UserDefaults.standard.set(true, forKey: Self.hasSeededDataKey)
+        } catch {
+            print("Failed to seed initial data: ", error)
+        }
+    }
+    
+    static let hasSeededDataKey = "hasSeededDataKey"
 }

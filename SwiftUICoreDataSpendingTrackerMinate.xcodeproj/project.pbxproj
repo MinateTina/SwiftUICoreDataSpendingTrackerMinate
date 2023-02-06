@@ -13,6 +13,13 @@
 		175BDA992989CFC40092AF05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175BDA982989CFC40092AF05 /* Preview Assets.xcassets */; };
 		175BDA9B2989CFC40092AF05 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BDA9A2989CFC40092AF05 /* Persistence.swift */; };
 		175BDA9E2989CFC40092AF05 /* SwiftUICoreDataSpendingTrackerMinate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175BDA9C2989CFC40092AF05 /* SwiftUICoreDataSpendingTrackerMinate.xcdatamodeld */; };
+		175BDAA62989CFF30092AF05 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BDAA52989CFF30092AF05 /* MainView.swift */; };
+		1790AAAE298C5DDD00C764BD /* AddTransactionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790AAAD298C5DDD00C764BD /* AddTransactionForm.swift */; };
+		1790AABC298C8DB200C764BD /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790AABB298C8DB200C764BD /* TransactionListView.swift */; };
+		1790AABE298DCB8600C764BD /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790AABD298DCB8600C764BD /* CategoriesListView.swift */; };
+		1790AAC42990572200C764BD /* DeviceIdiomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790AAC32990572200C764BD /* DeviceIdiomView.swift */; };
+		1794290E299065320017BA07 /* MainPadDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794290D299065320017BA07 /* MainPadDeviceView.swift */; };
+		17AEF0182989EF52002BD844 /* AddCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AEF0172989EF52002BD844 /* AddCardForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		175BDA982989CFC40092AF05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		175BDA9A2989CFC40092AF05 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		175BDA9D2989CFC40092AF05 /* SwiftUICoreDataSpendingTrackerMinate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUICoreDataSpendingTrackerMinate.xcdatamodel; sourceTree = "<group>"; };
+		175BDAA52989CFF30092AF05 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1790AAAD298C5DDD00C764BD /* AddTransactionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionForm.swift; sourceTree = "<group>"; };
+		1790AABB298C8DB200C764BD /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		1790AABD298DCB8600C764BD /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		1790AAC32990572200C764BD /* DeviceIdiomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdiomView.swift; sourceTree = "<group>"; };
+		1794290D299065320017BA07 /* MainPadDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPadDeviceView.swift; sourceTree = "<group>"; };
+		17AEF0172989EF52002BD844 /* AddCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 		175BDA902989CFC20092AF05 /* SwiftUICoreDataSpendingTrackerMinate */ = {
 			isa = PBXGroup;
 			children = (
+				175BDAA42989CFD80092AF05 /* Main */,
 				175BDA912989CFC20092AF05 /* SwiftUICoreDataSpendingTrackerMinateApp.swift */,
 				175BDA932989CFC20092AF05 /* ContentView.swift */,
 				175BDA952989CFC40092AF05 /* Assets.xcassets */,
@@ -71,6 +86,36 @@
 				175BDA982989CFC40092AF05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		175BDAA42989CFD80092AF05 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1790AAAA298C5D9900C764BD /* Transaction */,
+				17AEF0142989EE8D002BD844 /* AddCard */,
+				175BDAA52989CFF30092AF05 /* MainView.swift */,
+				1790AAC32990572200C764BD /* DeviceIdiomView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1790AAAA298C5D9900C764BD /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				1790AAAD298C5DDD00C764BD /* AddTransactionForm.swift */,
+				1790AABB298C8DB200C764BD /* TransactionListView.swift */,
+				1790AABD298DCB8600C764BD /* CategoriesListView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		17AEF0142989EE8D002BD844 /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				17AEF0172989EF52002BD844 /* AddCardForm.swift */,
+				1794290D299065320017BA07 /* MainPadDeviceView.swift */,
+			);
+			path = AddCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +189,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				175BDA9B2989CFC40092AF05 /* Persistence.swift in Sources */,
+				1790AABC298C8DB200C764BD /* TransactionListView.swift in Sources */,
 				175BDA9E2989CFC40092AF05 /* SwiftUICoreDataSpendingTrackerMinate.xcdatamodeld in Sources */,
 				175BDA942989CFC20092AF05 /* ContentView.swift in Sources */,
+				1790AAAE298C5DDD00C764BD /* AddTransactionForm.swift in Sources */,
+				1790AAC42990572200C764BD /* DeviceIdiomView.swift in Sources */,
+				1790AABE298DCB8600C764BD /* CategoriesListView.swift in Sources */,
+				17AEF0182989EF52002BD844 /* AddCardForm.swift in Sources */,
+				175BDAA62989CFF30092AF05 /* MainView.swift in Sources */,
 				175BDA922989CFC20092AF05 /* SwiftUICoreDataSpendingTrackerMinateApp.swift in Sources */,
+				1794290E299065320017BA07 /* MainPadDeviceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
