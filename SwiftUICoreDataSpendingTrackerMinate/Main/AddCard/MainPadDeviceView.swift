@@ -187,7 +187,7 @@ struct MainPadDeviceView_Previews: PreviewProvider {
         if #available(iOS 15.0, *) {
             MainPadDeviceView().previewDevice(PreviewDevice(rawValue: "ipad pro (11-inch) (10th generation)"))
                 .environment(\.horizontalSizeClass, .regular)
-                .previewInterfaceOrientation(.portrait)
+                .previewInterfaceOrientation(.landscapeLeft)
                 .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
         } else {
             //Fallback on earlier versions

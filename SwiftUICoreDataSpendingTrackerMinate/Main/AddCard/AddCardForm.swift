@@ -75,7 +75,7 @@ struct addCardForm: View {
                         }
                     }
                     Picker("Year", selection: $year) {
-                        ForEach(year..<year + 20, id: \.self) { num in
+                        ForEach(year..<year + 10, id: \.self) { num in
                             Text(String(num)).tag(String(num))
                         }
                     }

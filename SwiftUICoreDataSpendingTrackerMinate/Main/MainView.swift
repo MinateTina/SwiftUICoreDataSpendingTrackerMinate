@@ -7,10 +7,29 @@
 
 import SwiftUI
 
+struct TabMainView: View {
+    var body: some View {
+        VStack {
+            TabView {
+                MainView().edgesIgnoringSafeArea(.all)
+                    .tabItem {
+                        Image(systemName: "creditcard")
+                        Text("Credit Card")
+                }
+                
+                Text("Graphs").edgesIgnoringSafeArea(.all)
+                    .tabItem {
+                        Image(systemName: "cellularbars")
+                        Text("Graphs")
+                }
+            }
+        }
+    }
+}
+
 struct MainView: View {
     
     @State var shouldPresentAddCardForm = false
-    
     
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -27,7 +46,6 @@ struct MainView: View {
         NavigationView {
             ScrollView {
                 if !cards.isEmpty {
-                    
                     TabView(selection: $selectedCardHash) {
                         ForEach(cards) { card in
                              CreditCardView(card: card)
@@ -232,7 +250,7 @@ struct CreditCardView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         let viewContext = PersistenceController.shared.container.viewContext
-        MainView()
+        TabMainView()
             .environment(\.managedObjectContext, viewContext)
     }
 }
