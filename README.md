@@ -7,8 +7,16 @@ Hey there, I'm Tina, a passionate self-taught iOS developer who's in love with c
 
 ## Portfolio <span style='font-size:100px;'>&#9757;</span>
 
-<div>
-    <img src="coreDataiPhone.png" alt="" width="2000" height="1125 />
-    <img src="coreDataIpad.png" alt="" width="2000" height="1125 />
-</div>
+<p float="left">
+  <img src="coreDataiPhone.png" width="300" />
+
+</p>
+
+<p float="left">
+ 
+
+  <img src="/coreDataIpad.png" width="300" />
+</p>
+
+
 
