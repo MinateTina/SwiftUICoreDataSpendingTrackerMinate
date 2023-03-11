@@ -6,17 +6,13 @@ Hey there, I'm Tina, a passionate self-taught iOS developer who's in love with c
 
 
 ## Portfolio ☕
+List out of transactions under various created credit cards with categories as your own preference, including beautiful crystal reports on iPad as your unique asset.
 
 <p float="left">
-  <img src="coreDataiPhone.png" width="300" />
-
-</p>
-
-<p float="left">
- 
-
+  <img src="coreDataiPhone.png" width="540" />
   <img src="/coreDataIpad.png" width="300" />
 </p>
+
 
 ## Language and Tools ☕
 
