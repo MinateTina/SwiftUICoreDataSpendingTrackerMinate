@@ -11,10 +11,11 @@ Hey there, I'm Tina, a passionate self-taught iOS developer who's in love with c
 <p float="left">
   <img src="coreDataiPhone.png" width="540" />
   <img src="/coreDataIpad.png" width="300" />
-</p>
+</p> 
 
 - UI Display with Credit Cards
-- Persisting Card Information with Core Data
+- Persisting Card Information with Core Data 
+  - Involving Photo Picker with UIViewControllerRepresentable
 
 ## Language and Tools ☕
 
