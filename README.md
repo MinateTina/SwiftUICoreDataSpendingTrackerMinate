@@ -15,7 +15,10 @@ Hey there, I'm Tina, a passionate self-taught iOS developer who's in love with c
 
 - UI Display with Credit Cards
 - Persisting Card Information with Core Data 
+- Adding Card Transactions
   - Involving Photo Picker with UIViewControllerRepresentable
+  - One to Many Relationship Transactions
+
 
 ## Language and Tools ☕
 
