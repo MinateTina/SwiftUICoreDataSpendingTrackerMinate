@@ -14,10 +14,17 @@ Hey there, I'm Tina, a passionate self-taught iOS developer who's in love with c
 </p> 
 
 - UI Display with Credit Cards
-- Persisting Card Information with Core Data 
+- Persisting Card Information with Core Data  
 - Adding Card Transactions
   - Involving Photo Picker with UIViewControllerRepresentable
-  - One to Many Relationship Transactions
+  - One to Many Relationship Transactions 
+- Many to Many Transactions
+  - Category Selection Bindings 
+  - Seed DB and Prefill Form
+  - Filtering Algorithm 
+  - Card Balance Reduced Function
+- iPad Support and Device Classes
+
 
 
 ## Language and Tools ☕
